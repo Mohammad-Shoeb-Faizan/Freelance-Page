@@ -1,0 +1,252 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar styles */
+.navbar {
+  position: sticky;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 3vw;
+}
+.nav-links ul {
+  display: flex;
+}
+
+.nav-links li {
+  list-style: none;
+  font-size: 2vw;
+}
+
+.nav-links li {
+  margin-left: 15px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Homepage styles */
+/* .home {
+  height:50vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: contain;
+  background-color: #f7f7f7;
+  background: url("./home.png");
+  padding: 100px 0;
+  text-align: center;
+  color: #fff;
+} */
+.home {
+  position: relative;
+  text-align: center;
+  padding: 100px 0;
+  height: 50vh;
+  color: #fff;
+}
+
+.parallax-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("./home.png");
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -1;
+}
+
+/* Contained background image for mobile */
+@media (max-width: 767px) {
+  .parallax-bg {
+    background-attachment: scroll;
+    background-position: center;
+  }
+}
+
+.home h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.home p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.home .btn {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 12px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* About our Team styles */
+.about {
+  position: relative;
+  height: 100vh;
+  color: black;
+  padding: 100px 0;
+}
+
+.parallax-bg2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: url("./team.png");
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -2;
+}
+
+.about h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Companies Tech Stack styles */
+.tech-stack {
+  background-color: #f7f7f7;
+  padding: 80px 0;
+}
+
+.tech-stack h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.tech-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tech-list li {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+/* Services we provide styles */
+.services {
+  background-color: #fff;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.service-card {
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.service-card i {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+/* Some previous works styles */
+.previous-works {
+  background-color: #f7f7f7;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.previous-works h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.works-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+
+.work-item img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.work-item p {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+/* Footer styles */
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.footer p {
+  font-size: 18px;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.social-links li {
+  margin: 0 10px;
+}
+
+.social-links a {
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+/* Responsive styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
