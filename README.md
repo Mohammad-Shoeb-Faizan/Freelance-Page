@@ -10,7 +10,7 @@ This is a simple template for a freelance landing page. It's designed to showcas
 - [License](#license)
 
 ## Demo
-You can view a live demo of this template [here](#https://mohammad-shoeb-faizan.github.io/Freelance-Page/).
+You can view a live demo of this template [here](https://mohammad-shoeb-faizan.github.io/Freelance-Page/).
 
 ## Features
 - Responsive design for various screen sizes.
